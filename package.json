@@ -2,6 +2,7 @@
   "name": "beats",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://kulick23.github.io/beats/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
