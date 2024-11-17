@@ -12,7 +12,7 @@
     "lint:fix": "eslint -c .eslintrc src/*.js --fix",
     "prettier": "prettier --check . --ignore-unknown --ignore-path ../../config/.prettierignore",
     "prettier:fix": "prettier --write . --ignore-unknown --ignore-path ../../config/.prettierignore",
-    "deploy": "vite build && git add dist && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix dist origin gh-pages"
+    "deploy": "vite build && git add dist && git commit -m \"Deploy to GitHub Pages\" && git subtree push --prefix dist origin gh-pages"
 
   },
   "author": "Danila Kulinkovich",
