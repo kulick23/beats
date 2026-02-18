@@ -78,7 +78,6 @@ npm run preview
 - `npm run build` — production build
 - `npm run preview` — локальный предпросмотр production build
 - `npm run serve` — запуск Vite на `localhost:8080`
-- `npm run deploy` — сборка и деплой ветки `dist` в `gh-pages`
 
 ## Deployment
 ### Vercel
