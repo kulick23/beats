@@ -19,6 +19,15 @@ html {
   background-color: var(--main-bg-color);
   color: var(--color-black);
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#colors,
+#descriptions,
+#latest,
+#box,
+#subscribe {
+  scroll-margin-top: 14vh;
 }
 
 h1,
