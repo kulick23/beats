@@ -216,9 +216,11 @@ a {
 }
 
 .swipper__heading {
-  align-self: center;
+  width: 100%;
+  text-align: center;
   font-weight: 700;
   font-size: 5vh;
+  line-height: 1.1;
 }
 
 .content__statis {
@@ -269,6 +271,9 @@ a {
 
 .description__border {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 100px;
   border: 5px solid #FDD8D8;
   border-bottom: 8px solid #FF4948;
@@ -277,6 +282,9 @@ a {
 }
 
 .description__image {
+  position: relative;
+  z-index: 1;
+  display: block;
   height: 55%;
   width: 55%;
 }
