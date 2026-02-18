@@ -1,4 +1,4 @@
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { colorSlides } from '../../../shared/model/data';
 import { getAssetUrl } from '../../../shared/lib/getAssetUrl';
@@ -19,8 +19,14 @@ export function ColorCollection() {
           modifier: 1,
           slideShadows: true,
         }}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[Autoplay, EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         {colorSlides.map((slide) => (
