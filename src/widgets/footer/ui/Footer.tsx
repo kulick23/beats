@@ -1,4 +1,5 @@
 import { getAssetUrl } from '../../../shared/lib/getAssetUrl';
+import { navigationItems } from '../../../shared/config/navigation';
 
 export function Footer() {
   return (
@@ -6,9 +7,11 @@ export function Footer() {
       <div className="footer__block">
         <img src={getAssetUrl('assets/icons/logo.svg')} alt="Beats logo" />
         <div className="block__social block__social--active">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Product</a>
+          {navigationItems.map((item) => (
+            <a key={item.href} href={item.href}>
+              {item.label}
+            </a>
+          ))}
         </div>
         <div className="block__social">
           <a href="#" aria-label="Instagram">
