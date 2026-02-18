@@ -1,3 +1,4 @@
+import { useMenu } from '../../../features/menu/model/useMenu';
 import { BoxSection } from '../../../widgets/box/ui/BoxSection';
 import { ColorCollection } from '../../../widgets/collection/ui/ColorCollection';
 import { Footer } from '../../../widgets/footer/ui/Footer';
@@ -8,10 +9,12 @@ import { SpecsSection } from '../../../widgets/specs/ui/SpecsSection';
 import { SubscribeSection } from '../../../widgets/subscribe/ui/SubscribeSection';
 
 export function HomePage() {
+  const { isOpen, toggleMenu, closeMenu } = useMenu();
+
   return (
     <div className="app">
       <div className="app__Allcontent">
-        <Header />
+        <Header isMenuOpen={isOpen} onMenuToggle={toggleMenu} onMenuClose={closeMenu} />
 
         <main className="main__content">
           <HeroSection />
