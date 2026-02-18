@@ -1,28 +1,28 @@
 # Beats Landing
 
-Современный лендинг на **React + TypeScript + Vite** с адаптивной версткой, интерактивным mobile dropdown-меню, слайдером коллекции и валидацией формы подписки.
+A modern **React + TypeScript + Vite** landing page with responsive layout, mobile dropdown menu, product slider, and email subscription validation.
 
 ## Demo
 - Local: `http://localhost:5173`
-- Production (Vercel): настраивается через `vercel.json`
+- Production: deploy-ready for Vercel via `vercel.json`
 
-## Stack
+## Tech Stack
 - **React 19**
 - **TypeScript 5**
 - **Vite 7**
 - **Swiper 12**
-- **CSS (custom, without UI frameworks)**
+- **Custom CSS**
 
 ## Features
-- Адаптивная верстка для mobile/tablet/desktop
-- Dropdown burger-меню на мобильных
-- Плавный скролл по якорям
-- Swiper coverflow-слайдер
-- Блок подписки с:
-  - валидацией email
-  - сообщением об ошибке
-  - красивым success-alert
-- Hover/focus состояния для интерактивных элементов
+- Responsive layout (mobile / tablet / desktop)
+- Mobile burger dropdown navigation
+- Smooth anchor scrolling
+- Swiper coverflow slider section
+- Subscription form with:
+  - email validation
+  - error message
+  - success alert
+- Hover/focus states for interactive UI elements
 
 ## Project Structure
 ```text
@@ -50,48 +50,50 @@ src/
       types.ts
 styles/
   style.css
+public/
+  assets/
 ```
 
 ## Getting Started
-### 1. Install
+### 1. Install dependencies
 ```bash
 npm install
 ```
 
-### 2. Run dev server
+### 2. Run development server
 ```bash
 npm run dev
 ```
 
-### 3. Build
+### 3. Build for production
 ```bash
 npm run build
 ```
 
-### 4. Preview build
+### 4. Preview production build
 ```bash
 npm run preview
 ```
 
-## Scripts
-- `npm run dev` — запуск в режиме разработки
-- `npm run build` — production build
-- `npm run preview` — локальный предпросмотр production build
-- `npm run serve` — запуск Vite на `localhost:8080`
+## NPM Scripts
+- `npm run dev` — run dev server
+- `npm run build` — create production build
+- `npm run preview` — preview production build locally
+- `npm run serve` — run Vite on `localhost:8080`
 
 ## Deployment
 ### Vercel
-Проект готов к деплою на Vercel, конфиг уже добавлен:
+Project is configured for Vercel deployment:
 - `vercel.json`
   - framework: `vite`
-  - output: `dist`
-  - SPA rewrites на `index.html`
+  - output directory: `dist`
+  - SPA rewrites to `index.html`
 
 ### GitHub Pages
-Учитывается `base` в `vite.config.ts`:
+Current Vite base path:
 - `base: '/'`
 
 ## Quality
-- Зависимости обновлены и проверены: `npm audit` → **0 vulnerabilities**
-- Production build проходит успешно
+- `npm audit` reports **0 vulnerabilities**
+- Production build passes successfully
 
