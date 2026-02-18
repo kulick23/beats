@@ -1,25 +1,30 @@
 {
   "name": "beats",
   "version": "1.0.0",
-  "main": "index.js",
   "homepage": "https://kulick23.github.io/beats/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=./",
-    "serve": "vite --host=localhost --port=8080 ./ ",
+    "build": "vite build",
+    "serve": "vite --host=localhost --port=8080",
     "preview": "vite preview",
     "lint": "eslint -c .eslintrc src/*.js",
     "lint:fix": "eslint -c .eslintrc src/*.js --fix",
     "prettier": "prettier --check . --ignore-unknown --ignore-path ../../config/.prettierignore",
     "prettier:fix": "prettier --write . --ignore-unknown --ignore-path ../../config/.prettierignore",
     "deploy": "vite build && git add dist && git commit -m \"Deploy to GitHub Pages\" && git subtree push --prefix dist origin gh-pages"
-
   },
   "author": "Danila Kulinkovich",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.9.3",
     "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "swiper": "^12.1.1"
   }
-  
- 
 }
