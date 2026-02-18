@@ -1,7 +1,6 @@
 {
   "name": "beats",
   "version": "1.0.0",
-  "homepage": "https://kulick23.github.io/beats/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

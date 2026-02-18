@@ -89,10 +89,9 @@ npm run preview
 
 ### GitHub Pages
 Учитывается `base` в `vite.config.ts`:
-- `base: '/beats/'`
+- `base: '/'`
 
 ## Quality
 - Зависимости обновлены и проверены: `npm audit` → **0 vulnerabilities**
 - Production build проходит успешно
-
 
